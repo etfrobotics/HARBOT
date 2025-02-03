@@ -1,9 +1,5 @@
 # Meetings Minutes
 
-## Meeting 05.02.2025.
-
-Test 
-
 ## Meeting 03.02.2025.
 
 | Task | Responsible | Due | Status |

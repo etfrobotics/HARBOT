@@ -1,0 +1,6 @@
+site_name: HARBOT docs
+nav:
+  - Home: index.md
+  - Meetings Minutes: logs.md
+  - About: about.md
+theme: readthedocs

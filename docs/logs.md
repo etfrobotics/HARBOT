@@ -8,7 +8,7 @@
 | Fix the timing issue in the simulation and merge control for real and simulated system | Nikola Ruzic | 27.02.2025. | ⚠️ TO BE DONE |
 | Refactor documentation, perform ROS2 integration testing, and automate ROS2/1 Bridge bring up with a script. | Nikola Knezevic, Nikola Ruzic | 27.02.2025. | ⚠️ TO BE DONE |
 | Explore the possibility of an IROS submission. | Nikola Ruzic, Sumbal Malik | 27.02.2025. | ⚠️ TO BE DONE |
-| Digital twin AL Silal | Sumbal Malik | 27.02.2025. | ⚠️ TO BE DONE |
+| Digital twin AL Silal | |  | ⚠️ TO BE DONE |
 | Unitry GO1 GitHub |Syed Abbas Hussain | 27.02.2025. | ⚠️ TO BE DONE |
 | Joint GitHub organisation and structure |Syed Abbas Hussain, Nikola Knezevic | 27.02.2025. | ⚠️ TO BE DONE |
 

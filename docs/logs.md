@@ -1,6 +1,6 @@
 # Meetings Minutes
 
-## Meeting 13.02.2025.
+## Meeting 13.02.2024.
 
 | Task | Responsible | Due | Status |
 | :---: | :---: | :---: | :---:|

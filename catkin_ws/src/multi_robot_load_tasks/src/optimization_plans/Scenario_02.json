@@ -1,0 +1,140 @@
+{
+  "metadata": {
+    "timestamp": "2025-02-04T14:34:56.975772",
+    "total_makespan": 0.415,
+    "n_robots": 1
+  },
+  "robots": [
+    {
+      "robot_id": 1,
+      "speed_kmh": 4.48,
+      "capacity_kg": 44.53,
+      "route_time_hours": 0.415,
+      "start_depot": 0,
+      "end_depot": 1,
+      "route": [
+        {
+          "location_id": 0,
+          "coordinates": {
+            "x": 0.2,
+            "y": 0.0
+          },
+          "weight_kg": 0,
+          "type": "depot",
+          "sequence": 1
+        },
+        {
+          "location_id": 4,
+          "coordinates": {
+            "x": 0.1873,
+            "y": -0.1693
+          },
+          "weight_kg": 5.57,
+          "type": "customer",
+          "sequence": 2
+        },
+        {
+          "location_id": 3,
+          "coordinates": {
+            "x": 0.008,
+            "y": -0.2468
+          },
+          "weight_kg": 2.04,
+          "type": "customer",
+          "sequence": 3
+        },
+        {
+          "location_id": 11,
+          "coordinates": {
+            "x": -0.0652,
+            "y": -0.236
+          },
+          "weight_kg": 7.19,
+          "type": "customer",
+          "sequence": 4
+        },
+        {
+          "location_id": 9,
+          "coordinates": {
+            "x": -0.005,
+            "y": -0.1129
+          },
+          "weight_kg": 2.98,
+          "type": "customer",
+          "sequence": 5
+        },
+        {
+          "location_id": 10,
+          "coordinates": {
+            "x": -0.034,
+            "y": 0.0567
+          },
+          "weight_kg": 2.65,
+          "type": "customer",
+          "sequence": 6
+        },
+        {
+          "location_id": 5,
+          "coordinates": {
+            "x": -0.0338,
+            "y": 0.0702
+          },
+          "weight_kg": 1.95,
+          "type": "customer",
+          "sequence": 7
+        },
+        {
+          "location_id": 2,
+          "coordinates": {
+            "x": 0.0805,
+            "y": 0.0961
+          },
+          "weight_kg": 5.89,
+          "type": "customer",
+          "sequence": 8
+        },
+        {
+          "location_id": 7,
+          "coordinates": {
+            "x": -0.0121,
+            "y": 0.1183
+          },
+          "weight_kg": 6.02,
+          "type": "customer",
+          "sequence": 9
+        },
+        {
+          "location_id": 8,
+          "coordinates": {
+            "x": -0.2193,
+            "y": 0.197
+          },
+          "weight_kg": 5.5,
+          "type": "customer",
+          "sequence": 10
+        },
+        {
+          "location_id": 6,
+          "coordinates": {
+            "x": -0.1913,
+            "y": -0.082
+          },
+          "weight_kg": 2.6,
+          "type": "customer",
+          "sequence": 11
+        },
+        {
+          "location_id": 1,
+          "coordinates": {
+            "x": -0.2,
+            "y": 0.0
+          },
+          "weight_kg": 0,
+          "type": "depot",
+          "sequence": 12
+        }
+      ],
+      "total_weight_kg": 42.39
+    }
+  ]
+}

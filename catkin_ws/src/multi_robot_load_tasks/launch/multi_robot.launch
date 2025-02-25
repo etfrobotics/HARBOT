@@ -1,0 +1,55 @@
+<launch>
+    <!-- Add the launch for the rbkairos_bringup_sim Along with a flag which denotes if we are working on a real robot -->
+
+    <node pkg="multi_robot_load_tasks" type="multi_robot_handler.py" name="multi_robot_handler" output="screen">
+    </node>
+
+    <!-- Spawn services robot 1 -->
+    <node pkg="multi_robot_load_tasks" type="spawn_manipulation_service.py" name="robot_man_service" output="screen">
+        <param name="robot_id" value="robot" />
+    </node>
+    <node pkg="multi_robot_load_tasks" type="spawn_movement_service.py" name="robot_move_service" output="screen">
+        <param name="robot_id" value="robot" />
+    </node>
+
+    <!-- Spawn Robot 1 -->
+    <node pkg="multi_robot_load_tasks" type="spawn_robot.py" name="robot_controller" output="screen">
+        <param name="robot_id" value="robot" />
+    </node>
+
+    <!-- ###################################################### -->
+
+    <!-- Spawn services robot 2 -->
+    <!-- <node pkg="multi_robot_load_tasks" type="spawn_manipulation_service.py" name="robot_b_man_service" output="screen">
+        <param name="robot_id" value="robot_b" />
+    </node>
+    <node pkg="multi_robot_load_tasks" type="spawn_movement_service.py" name="robot_b_move_service" output="screen">
+        <param name="robot_id" value="robot_b" />
+    </node> -->
+
+    <!-- Spawn Robot 2 -->
+    <!-- <node pkg="multi_robot_load_tasks" type="spawn_robot.py" name="robot_b_controller" output="screen">
+        <param name="robot_id" value="robot_b" />
+    </node> -->
+
+    <!-- ############################################### -->
+    <!-- Spawn services robot 3 -->
+
+    <!-- <node pkg="multi_robot_load_tasks" type="spawn_manipulation_service.py" name="robot_c_man_service" output="screen">
+        <param name="robot_id" value="robot_c" />
+    </node>
+    <node pkg="multi_robot_load_tasks" type="spawn_movement_service.py" name="robot_c_move_service" output="screen">
+        <param name="robot_id" value="robot_c" />
+    </node> -->
+
+    <!-- Spawn Robot 3 -->
+    <!-- <node pkg="multi_robot_load_tasks" type="spawn_robot.py" name="robot_c_controller" output="screen">
+        <param name="robot_id" value="robot_c" />
+    </node> -->
+
+    <!-- Start the publishing process -->
+    <node pkg="multi_robot_load_tasks" type="route_parser.py" name="plan_parser" output="screen">
+    </node>
+
+</launch>
+

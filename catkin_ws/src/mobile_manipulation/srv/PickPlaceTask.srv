@@ -1,0 +1,22 @@
+# Input: Start pose
+float64 start_x
+float64 start_y
+float64 start_z
+float64 start_qx
+float64 start_qy
+float64 start_qz
+float64 start_qw
+
+# Input: End pose
+float64 end_x
+float64 end_y
+float64 end_z
+float64 end_qx
+float64 end_qy
+float64 end_qz
+float64 end_qw
+
+---
+# Output: Success and message
+bool success
+string message

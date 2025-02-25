@@ -1,0 +1,19 @@
+1. Napraviti nadogradnju sistema da postoji klasa za robote gde postoje informacije:
+
+Inicijalne pozicije
+Id
+Definise topic
+Definise tip bekenda za robota (Ovde za sve je move_base + Moveit)
+
+2. Izvedi funkciju za Rbkairosa
+
+3. Testiraj kretanje vise robota
+
+----------------------------
+
+4. Promeni ROS2 parser da moze da primi listu robotskih akcija i da ih 
+formatira u niz akcija koje svaki od robota treba da izvrsi. 
+
+5. Handler treba da preuzme obradjeni set akcija i da ima listu aktivnih robota. Za svakog robota izvrsava set akcija paralelno.
+Callback isti, vidi da li mozes da ides dalje po skripti bez da cekas da robot zavrsi kretanje i onda na kraju da proveris
+uslov da li su izvrsene sve akcije.

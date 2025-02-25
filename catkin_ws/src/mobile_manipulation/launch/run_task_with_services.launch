@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- Launch the rbkairos_complete.launch from rbkairos_sim_bringup -->
+    <include file="$(find rbkairos_sim_bringup)/launch/rbkairos_complete.launch" />
+
+    <!-- Launch the mobile_base_handler service -->
+    <node name="mobile_base_handler" pkg="mobile_manipulation" type="mobile_base_service.py" output="screen" />
+
+    <!-- Launch the manipulation_handler service -->
+    <node name="manipulation_handler" pkg="mobile_manipulation" type="manipulation_service.py" output="screen" />
+
+    <!-- Launch the position_loader node -->
+    <node name="position_loader" pkg="mobile_manipulation" type="position_handler_plus.py" output="screen"/>
+
+    <!-- Launch the optimization_command_handler node (new node)ROS2 --> 
+    <!-- <node name="optimization_command_handler" pkg="mobile_manipulation" type="optimization_command_handler.py" output="screen" /> -->
+
+</launch>

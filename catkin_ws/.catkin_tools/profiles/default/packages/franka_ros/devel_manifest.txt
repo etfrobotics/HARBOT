@@ -1,0 +1,2 @@
+franka_ros/franka_ros
+/home/ruzamladji/catkin_ws/devel/.private/franka_ros/cmake.lock /home/ruzamladji/catkin_ws/devel/./cmake.lock

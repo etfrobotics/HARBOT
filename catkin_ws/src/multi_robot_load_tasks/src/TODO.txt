@@ -1,0 +1,27 @@
+
+ROS2-ROS1 Bridge bringup: **
+    - Refactor and add Gurobi API in ROS2
+    - Automate ROS2 bringup script  
+
+Debug the robot navigation on a new map. ***
+    - Make a smaller map with pillars instead of walls which are not completely connected.
+    - Investigate the localization move_base crashes
+
+Real-robot refactor: *
+    - Add a flag that switches the nodes and interfaces for a real robot - > with the command_manager system. 
+    - The controllers will differ but the general scheduler should stay the same
+
+Change the route_parser to be more general
+
+Make a better environment(Al Silal.. etc)
+
+numer of '*' -> Urgency rating 
+
+# General Notes and commands:
+
+rostopic pub /multi_robot_planner std_msgs/String '{"data": "{\"robot\": \"MOVE 1.0 2.0 0.0 0.0 0.0 0.0 1.0\\nPICKPLACE 0.5 0.5 0.0 0.0 0.0 0.0 1.0 1.5 1.5 0.0 0.0 0.0 0.0 1.0\", \"robot_b\": \"MOVE 2.0 3.0 0.0 0.0 0.0 0.0 1.0\\nMOVE 3.5 4.0 0.0 0.0 0.0 0.0 1.0\", \"robot_c\": \"PICKPLACE 1.0 1.0 0.0 0.0 0.0 0.0 1.0 2.0 2.0 0.0 0.0 0.0 0.0 1.0\"}"}'
+
+# Good values for testing
+rosservice call /robot/pickplace_service "{start_x: -0.4, start_y: 0.0, start_z: 0.7, start_qx: -0.00192, start_qy: 0.98355, start_qz: -0.18062,
+  start_qw: 0.00037445, end_x: -0.5, end_y: 0.0, end_z: 1, end_qx: -0.0019288, end_qy: 0.98355, end_qz: -0.18062,
+  end_qw: 0.00037}"

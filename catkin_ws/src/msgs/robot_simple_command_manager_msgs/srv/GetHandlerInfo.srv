@@ -1,0 +1,4 @@
+string name
+---
+bool success
+robot_simple_command_manager_msgs/HandlerInfo info

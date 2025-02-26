@@ -71,12 +71,12 @@ class ManipulationHandler:
         # -0.5753 -0.411 0.586 0.3955 # Ori
         # Initialize MoveIt Commander
         moveit_commander.roscpp_initialize(sys.argv)
-        print(robot_id)
+
         self.robot = moveit_commander.RobotCommander(robot_description=f'/{robot_id}/robot_description', ns=self.robot_id)
         self.group = moveit_commander.MoveGroupCommander("ur5_arm", robot_description=f'/{robot_id}/robot_description', ns=self.robot_id)
-        
 
-        # self.finished_pub = rospy.Publisher('/finished_stream', String, queue_size=10)
+        self.hand_group = moveit_commander.MoveGroupCommander("egh_gripper", robot_description=f'/{robot_id}/robot_description', ns=self.robot_id)
+        
 
         # Create a service for pick-and-place tasks
         self.service = rospy.Service(f'/{robot_id}/pickplace_service', PickPlaceTask, self.handle_pickplace_task)
@@ -90,11 +90,20 @@ class ManipulationHandler:
             start_pose = [req.start_x, req.start_y, req.start_z, req.start_qx, req.start_qy, req.start_qz, req.start_qw]
             end_pose = [req.end_x, req.end_y, req.end_z, req.end_qx, req.end_qy, req.end_qz, req.end_qw]
 
+            # Move the gripper to the start position
+            self.control_gripper("open")
+
             # Move to the start position
             self.move_arm_to(start_pose)
 
+            # Close the gripper
+            self.control_gripper("close")
+
             # Move to the end position
             self.move_arm_to(end_pose)
+
+            # Open the gripper
+            self.control_gripper("open")
 
             # Publish task completion
             # self.finished_pub.publish(f"PICKPLACE_COMPLETED {req.start_x} {req.start_y} {req.end_x} {req.end_y}")
@@ -118,6 +127,17 @@ class ManipulationHandler:
         if not success:
             raise Exception("Failed to move to the target pose")
         rospy.loginfo(f"Moved to pose: {pose.pose}")
+    
+    def control_gripper(self, action):
+        """Controls the gripper of the robot."""
+        if action == "open":
+            self.hand_group.set_named_target("open")
+        elif action == "close":
+            self.hand_group.set_named_target("close")
+        else:
+            raise ValueError(f"Unknown gripper action: {action}")
+        self.hand_group.go(wait=True)
+        rospy.loginfo(f"Gripper action completed: {action}")
 
     def run(self):
         rospy.loginfo("ManipulationHandler service is running")
@@ -211,6 +231,43 @@ class MobileBaseHandler:
     def run(self):
         rospy.loginfo("MobileBaseHandler service is ready")
         rospy.spin()
+
+
+# class GripperControl:
+#     def __init__(self, robot_id):
+#         rospy.init_node(f'{robot_id}_gripper_controller', anonymous=True)
+#         self.robot_id = robot_id
+
+#         # Initialize MoveIt Commander
+#         moveit_commander.roscpp_initialize(sys.argv)
+
+#         self.robot = moveit_commander.RobotCommander(robot_description=f'/{robot_id}/robot_description', ns=self.robot_id)
+#         self.group = moveit_commander.MoveGroupCommander("egh_gripper", robot_description=f'/{robot_id}/robot_description', ns=self.robot_id)
+
+#         # Create a service for gripper control
+#         self.service = rospy.Service(f'/{robot_id}/gripper_control', GripperControl, self.handle_gripper_control)
+
+#         rospy.loginfo(f"GripperControl initialized for the robot: {robot_id}")
+
+#     def handle_gripper_control(self, req):
+#         """Handles the gripper control task via service request."""
+#         try:
+#             if req.action == "open":
+#                 self.group.set_named_target("open")
+#             elif req.action == "close":
+#                 self.group.set_named_target("close")
+#             else:
+#                 raise ValueError(f"Unknown gripper action: {req.action}")
+#             self.group.go(wait=True)
+#             rospy.loginfo(f"Gripper action completed: {req.action}")
+#             return GripperControlResponse(success=True, message="Task completed successfully")
+#         except Exception as e:
+#             rospy.logerr(f"Error during gripper control task: {e}")
+#             return GripperControlResponse(success=False, message=str(e))
+
+#     def run(self):
+#         rospy.loginfo("GripperControl service is running")
+#         rospy.spin()
 
 
 # rosservice call /robot/pickplace_service "{start_x: -0.4, start_y: 0.0, start_z: 0.7, start_qx: -0.00192, start_qy: 0.98355, start_qz: -0.18062,

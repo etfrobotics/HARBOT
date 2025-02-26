@@ -1,0 +1,7 @@
+<launch>
+    
+    <!-- Start the publishing process -->
+    <node pkg="multi_robot_load_tasks" type="route_parser.py" name="plan_parser" output="screen">
+    </node>
+
+</launch>

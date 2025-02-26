@@ -71,15 +71,17 @@ class ManipulationHandler:
         # -0.5753 -0.411 0.586 0.3955 # Ori
         # Initialize MoveIt Commander
         moveit_commander.roscpp_initialize(sys.argv)
+        print(robot_id)
         self.robot = moveit_commander.RobotCommander(robot_description=f'/{robot_id}/robot_description', ns=self.robot_id)
         self.group = moveit_commander.MoveGroupCommander("ur5_arm", robot_description=f'/{robot_id}/robot_description', ns=self.robot_id)
+        
 
         # self.finished_pub = rospy.Publisher('/finished_stream', String, queue_size=10)
 
         # Create a service for pick-and-place tasks
         self.service = rospy.Service(f'/{robot_id}/pickplace_service', PickPlaceTask, self.handle_pickplace_task)
 
-        rospy.loginfo("ManipulationHandler initialized and ready for tasks")
+        rospy.loginfo(f"ManipulationHandler initialized for the robot: {robot_id}")
 
     def handle_pickplace_task(self, req):
         """Handles the pick-and-place task via service request."""
@@ -90,7 +92,6 @@ class ManipulationHandler:
 
             # Move to the start position
             self.move_arm_to(start_pose)
-            print("prosao start")
 
             # Move to the end position
             self.move_arm_to(end_pose)
@@ -125,7 +126,9 @@ class ManipulationHandler:
 class MobileBaseHandler:
     def __init__(self, robot_id):
         rospy.init_node(f'{robot_id}_mobile_base_handler', anonymous=False)
-        rospy.loginfo("MobileBaseHandler initialized")
+        rospy.loginfo(f"MobileBaseHandler initialized for the robot: {robot_id}")
+
+        self.robot_id = robot_id
         # self.finished_pub = rospy.Publisher('/finished_stream', String, queue_size=10)
         self.goal_pub = rospy.Publisher(f'/{robot_id}/move_base_simple/goal', PoseStamped, queue_size=10)
 
@@ -166,7 +169,7 @@ class MobileBaseHandler:
             # Publish the goal position
             goal = PoseStamped()
             goal.header.stamp = rospy.Time.now()
-            goal.header.frame_id = "robot_map"
+            goal.header.frame_id = f"{self.robot_id}_map"
 
             goal.pose.position.x = x
             goal.pose.position.y = y

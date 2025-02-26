@@ -11,7 +11,8 @@ class MultiRobotHandler:
         # Robot IDs
         # self.robot_ids = ['robot_b', 'robot_c']s
 
-        self.robot_ids = ['robot']
+        #TODO: add as a param
+        self.robot_ids = ['robot', 'robot_b', 'robot_c']
 
         # Publishers for each robot's plan topic
         self.publishers = {robot_id: rospy.Publisher(f'/{robot_id}/plan', String, queue_size=10) for robot_id in self.robot_ids}

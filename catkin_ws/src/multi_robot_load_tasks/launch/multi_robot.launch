@@ -1,55 +1,57 @@
 <launch>
-    <!-- Add the launch for the rbkairos_bringup_sim Along with a flag which denotes if we are working on a real robot -->
+    <!-- Define robot IDs -->
+    <arg name="robot1_id" default="robot"/>
+    <arg name="robot2_id" default="robot_b"/>
+    <arg name="robot3_id" default="robot_c"/>
 
     <node pkg="multi_robot_load_tasks" type="multi_robot_handler.py" name="multi_robot_handler" output="screen">
     </node>
 
-    <!-- Spawn services robot 1 -->
-    <node pkg="multi_robot_load_tasks" type="spawn_manipulation_service.py" name="robot_man_service" output="screen">
-        <param name="robot_id" value="robot" />
-    </node>
-    <node pkg="multi_robot_load_tasks" type="spawn_movement_service.py" name="robot_move_service" output="screen">
-        <param name="robot_id" value="robot" />
-    </node>
+    <!-- Spawn Set for Robot 1 -->
+    <group ns="$(arg robot1_id)">
+        <node pkg="multi_robot_load_tasks" type="spawn_movement_service.py" name="" output="screen">
+            <param name="~robot_id" value="$(arg robot1_id)" />
+        </node>
+<!-- 
+        <node pkg="multi_robot_load_tasks" type="spawn_manipulation_service.py" name="" output="screen">
+            <param name="~robot_id" value="$(arg robot1_id)" />
+        </node> -->
 
-    <!-- Spawn Robot 1 -->
-    <node pkg="multi_robot_load_tasks" type="spawn_robot.py" name="robot_controller" output="screen">
-        <param name="robot_id" value="robot" />
-    </node>
+        <node pkg="multi_robot_load_tasks" type="spawn_robot.py" name="" output="screen">
+            <param name="~robot_id" value="$(arg robot1_id)" />
+        </node>
 
-    <!-- ###################################################### -->
+    </group>
 
-    <!-- Spawn services robot 2 -->
-    <!-- <node pkg="multi_robot_load_tasks" type="spawn_manipulation_service.py" name="robot_b_man_service" output="screen">
-        <param name="robot_id" value="robot_b" />
-    </node>
-    <node pkg="multi_robot_load_tasks" type="spawn_movement_service.py" name="robot_b_move_service" output="screen">
-        <param name="robot_id" value="robot_b" />
-    </node> -->
+    <!-- Spawn Set for Robot 2 -->
+    <group ns="$(arg robot2_id)">
+        <node pkg="multi_robot_load_tasks" type="spawn_movement_service.py" name="" output="screen">
+            <param name="~robot_id" value="$(arg robot2_id)" />
+        </node>
 
-    <!-- Spawn Robot 2 -->
-    <!-- <node pkg="multi_robot_load_tasks" type="spawn_robot.py" name="robot_b_controller" output="screen">
-        <param name="robot_id" value="robot_b" />
-    </node> -->
+        <!-- <node pkg="multi_robot_load_tasks" type="spawn_manipulation_service.py" name="" output="screen">
+            <param name="~robot_id" value="$(arg robot2_id)" />
+        </node> -->
 
-    <!-- ############################################### -->
-    <!-- Spawn services robot 3 -->
+        <node pkg="multi_robot_load_tasks" type="spawn_robot.py" name="" output="screen">
+            <param name="~robot_id" value="$(arg robot2_id)" />
+        </node>
+    </group>
 
-    <!-- <node pkg="multi_robot_load_tasks" type="spawn_manipulation_service.py" name="robot_c_man_service" output="screen">
-        <param name="robot_id" value="robot_c" />
-    </node>
-    <node pkg="multi_robot_load_tasks" type="spawn_movement_service.py" name="robot_c_move_service" output="screen">
-        <param name="robot_id" value="robot_c" />
-    </node> -->
+    <!-- Spawn Set for Robot 3 -->
+    <group ns="$(arg robot3_id)">
+        <node pkg="multi_robot_load_tasks" type="spawn_movement_service.py" name="" output="screen">
+            <param name="~robot_id" value="$(arg robot3_id)" />
+        </node>
 
-    <!-- Spawn Robot 3 -->
-    <!-- <node pkg="multi_robot_load_tasks" type="spawn_robot.py" name="robot_c_controller" output="screen">
-        <param name="robot_id" value="robot_c" />
-    </node> -->
+        <!-- <node pkg="multi_robot_load_tasks" type="spawn_manipulation_service.py" name="" output="screen">
+            <param name="~robot_id" value="$(arg robot3_id)" />
+        </node> -->
 
-    <!-- Start the publishing process -->
-    <node pkg="multi_robot_load_tasks" type="route_parser.py" name="plan_parser" output="screen">
-    </node>
+        <node pkg="multi_robot_load_tasks" type="spawn_robot.py" name="" output="screen">
+            <param name="~robot_id" value="$(arg robot3_id)" />
+        </node>
+    </group>
 
 </launch>
 

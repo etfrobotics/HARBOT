@@ -92,7 +92,7 @@ def main():
 
 
     # Get the JSON file path from the ROS parameter server (default: "plan.json")
-    json_file = rospy.get_param("~json_file", "/home/ruzamladji/catkin_ws/src/multi_robot_load_tasks/src/optimization_plans/Scenario_01.json")
+    json_file = rospy.get_param("~json_file", "/home/ruzamladji/catkin_ws/src/multi_robot_load_tasks/src/optimization_plans/Scenario_03.json")
     rospy.loginfo("Using plan file: %s", json_file)
 
     # Load and parse the JSON file.

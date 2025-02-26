@@ -6,7 +6,7 @@
   },
   "robots": [
     {
-      "robot_id": 1,
+      "robot_id": "",
       "speed_kmh": 3.99,
       "capacity_kg": 32.22,
       "route_time_hours": 0.23,
@@ -117,7 +117,7 @@
       "total_weight_kg": 29.61
     },
     {
-      "robot_id": 2,
+      "robot_id": "_b",
       "speed_kmh": 2.71,
       "capacity_kg": 10.14,
       "route_time_hours": 0.251,
@@ -188,7 +188,7 @@
       "total_weight_kg": 7.44
     },
     {
-      "robot_id": 3,
+      "robot_id": "_c",
       "speed_kmh": 4.67,
       "capacity_kg": 45.1,
       "route_time_hours": 0.251,

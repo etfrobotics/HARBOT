@@ -6,7 +6,7 @@
   },
   "robots": [
     {
-      "robot_id": 1,
+      "robot_id": "",
       "speed_kmh": 4.48,
       "capacity_kg": 44.53,
       "route_time_hours": 0.415,

@@ -6,7 +6,17 @@ from robot_controllers import MobileBaseHandler
 
 if __name__ == '__main__':
     # Get robot_id from launch file parameter
-    robot_id = rospy.get_param("~robot_id", "robot")
+
+
+
+        # Retrieve robot_id using its full path
+    # robot_name = rospy.get_name()  # Gets the node name like "/robot/robot1_move_service"
+    robot_id_param = "robot_id"  # Construct the correct parameter path
+    robot_id = rospy.get_param(robot_id_param)  # Use the full path
+
+    # rospy.loginfo(f"Robot ID: {robot_id}")
+    # robot_id = rospy.get_param("~robot_id")
+    
     # init_pose_x = rospy.get_param("~init_pose_x", 76.67)
     # init_pose_y = rospy.get_param("~init_pose_y", 5)
     # init_pose_z = rospy.get_param("~init_pose_z", 0)

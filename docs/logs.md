@@ -1,15 +1,40 @@
 # Meetings Minutes
-
-## Meeting 13.02.2024.
+## Meeting 27.02.2025.
 
 |                                                     Task                                                     |             Responsible             |     Due     |    Status     |
 | :----------------------------------------------------------------------------------------------------------: | :---------------------------------: | :---------: | :-----------: |
-|                                               Report template                                                |            Sumbal Malik             |      /      | ⚠️ IN PROCESS |
-|            Fix the timing issue in the simulation and merge control for real and simulated system            |            Nikola Ruzic             | 27.02.2025. | ⚠️ TO BE DONE |
+| Refactor documentation, perform ROS2 integration testing, and automate ROS2/1 Bridge bring up with a script. |    Nikola Knezevic, Nikola Ruzic    | 13.03.2025. | ⚠️ TO BE DONE |
+|                                       Multi robot bug fix, Map bug fix                                       |    Nikola Knezevic, Nikola Ruzic    | 13.03.2025. | ⚠️ TO BE DONE |
+|                                Explore the possibility of an IROS submission.                                |     Nikola Ruzic, Sumbal Malik      | 13.03.2025. | ⚠️ TO BE DONE |
+|                                            Digital twin AL Silal                                             |                                     |             | ⚠️ TO BE DONE |
+|                                       PDDL example for multiple robots                                       |            Sumbal Malik             | 13.03.2025. | ⚠️ TO BE DONE |
+|                            Explore how to integrate the PDDF with GO1 integration                            |         Syed Abbas Hussain          | 13.03.2025. | ⚠️ TO BE DONE |
+|                                         Provide a link to GO1 GitHub repo                                    |         Syed Abbas Hussain          | 13.03.2025. | ⚠️ TO BE DONE |
+
+- Discussions about previously done work that included:
+
+  - The report template will be provided once received. KU RSO has been contacted, and we are awaiting the template. In the meantime, BU will begin drafting the report in free form until the official template is available.
+  - Bags fix: Timing, gripping, single robot simulation/real behaviour, ROS1
+  - There are still issues with multiple robots and the launch file—specifically, the robot_id is not propagating as expected through the launch files. Move_base works but MoveIt not.
+  - Gazebo - MAP creating needs to be check: from time to time move_base stuck because of low quaility maps.
+  - Research paper presented: [Heterogeneous Multi-robot Task Allocation and Scheduling via Reinforcement Learning](https://marmotlab.org/publications/73-RAL2025-HetMRTA.pdf)
+  - PDDL presented (Multiple depo option, Flexible return, Priority-based nodes, Variable vehicle and package capacity). 
+  - First experiments with PDDL done: BFWS and ENHSP search.
+  - Test and integration of R1 Arm and GO1 is done.
+  - Presented Web integration and manipulator (jogging, reset to home, execute prerecodred movements, open/close gripper)
+  - Presented arhitecture of GO1+ARM+LIDAR 
+
+
+## Meeting 13.02.2025.
+
+|                                                     Task                                                     |             Responsible             |     Due     |    Status     |
+| :----------------------------------------------------------------------------------------------------------: | :---------------------------------: | :---------: | :-----------: |
+|                                               Report template                                                |            Sumbal Malik             |      /      |   ✅ DONE  |
+|            Fix the timing issue in the simulation and merge control for real and simulated system            |            Nikola Ruzic             | 27.02.2025. |   ✅ DONE  |
 | Refactor documentation, perform ROS2 integration testing, and automate ROS2/1 Bridge bring up with a script. |    Nikola Knezevic, Nikola Ruzic    | 27.02.2025. | ⚠️ TO BE DONE |
 |                                Explore the possibility of an IROS submission.                                |     Nikola Ruzic, Sumbal Malik      | 27.02.2025. | ⚠️ TO BE DONE |
 |                                            Digital twin AL Silal                                             |                                     |             | ⚠️ TO BE DONE |
-|                                              Unitry GO1 GitHub                                               |         Syed Abbas Hussain          | 27.02.2025. | ⚠️ TO BE DONE |
+|                                              Unitry GO1 GitHub                                               |         Syed Abbas Hussain          | 27.02.2025. |   ✅ DONE  |
 |                                   Joint GitHub organisation and structure                                    | Syed Abbas Hussain, Nikola Knezevic | 27.02.2025. |    ✅ DONE    |
 |                            Explore how to integrate the PDDF with GO1 integration                            |         Syed Abbas Hussain          | 27.02.2025. | ⚠️ TO BE DONE |
 

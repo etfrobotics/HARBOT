@@ -5,7 +5,6 @@
 | :----------------------------------------------------------------------------------------------------------: | :---------------------------------: | :---------: | :-----------: |
 | Refactor documentation, perform ROS2 integration testing, and automate ROS2/1 Bridge bring up with a script. |    Nikola Knezevic, Nikola Ruzic    | 13.03.2025. | ⚠️ TO BE DONE |
 |                                       Multi robot bug fix, Map bug fix                                       |    Nikola Knezevic, Nikola Ruzic    | 13.03.2025. | ⚠️ TO BE DONE |
-|                                Explore the possibility of an IROS submission.                                |     Nikola Ruzic, Sumbal Malik      | 13.03.2025. | ⚠️ TO BE DONE |
 |                                            Digital twin AL Silal                                             |                                     |             | ⚠️ TO BE DONE |
 |                                       PDDL example for multiple robots                                       |            Sumbal Malik             | 13.03.2025. | ⚠️ TO BE DONE |
 |                            Explore how to integrate the PDDF with GO1 integration                            |         Syed Abbas Hussain          | 13.03.2025. | ⚠️ TO BE DONE |
@@ -18,8 +17,8 @@
   - There are still issues with multiple robots and the launch file—specifically, the robot_id is not propagating as expected through the launch files. Move_base works but MoveIt not.
   - Gazebo - MAP creating needs to be check: from time to time move_base stuck because of low quaility maps.
   - Research paper presented: [Heterogeneous Multi-robot Task Allocation and Scheduling via Reinforcement Learning](https://marmotlab.org/publications/73-RAL2025-HetMRTA.pdf)
-  - PDDL presented (Multiple depo option, Flexible return, Priority-based nodes, Variable vehicle and package capacity). 
-  - First experiments with PDDL done: BFWS and ENHSP search.
+  - Formulated a Flexible Multi-Depot VRP as Planning Domain Definition Language (PDDL).
+  - Initial experiments with PDDL were conducted using BFWS and ENHSP planners.
   - Test and integration of R1 Arm and GO1 is done.
   - Presented Web integration and manipulator (jogging, reset to home, execute prerecodred movements, open/close gripper)
   - Presented arhitecture of GO1+ARM+LIDAR 
@@ -47,7 +46,7 @@
 
   - Fix the timing issue in the simulation and merge control for real and simulated systems.
   - Refactor documentation, perform ROS2 integration testing, and automate ROS2/1 Bridge bring up with a script.
-  - Explore the possibility of an IROS submission.
+  - Explore the possibility of an IROS submission [IROS Paper Submission Deadline: March 01, 2025].
 
 - Possible IROS submission, where the work from the RAAD paper would be expanded upon. Additions would consist of including a parser for Planning Domain Definition Language (PDDL) to encapsulate different capabilities for the planning algorithm pipeline.
 

@@ -1,13 +1,42 @@
 # Meetings Minutes
+## Meeting 11.03.2025.
+
+|                                                     Task                                                     |             Responsible             |     Due     |    Status     |
+| :----------------------------------------------------------------------------------------------------------: | :---------------------------------: | :---------: | :-----------: |
+|                                         Finish Q1 report                                                     |            Nikola Knezevic          | 25.03.2025. | ⚠️ TO BE DONE |
+|                                         Grasping strategies repo                                             |            Nikola Knezevic          | 25.03.2025. | ⚠️ TO BE DONE |
+|                                         RAAD paper comments                                                  |  Nikola Knezevic, Nikola Ruzic, Sumbal Malik       | 25.03.2025. | ⚠️ TO BE DONE |
+|                                         Simulation environments for greenhouses                              |            Nikola Ruzic, Sayed          | 25.03.2025. | ⚠️ TO BE DONE |
+|                                       Multi robot bug fix, Map bug fix                                       |    Nikola Knezevic, Nikola Ruzic    | 25.03.2025. | ⚠️ TO BE DONE |
+|                                            Digital twin AL Silal                                             |                                     |             | ⚠️ TO BE DONE |
+|                                       Review the PDDL versions and related work.                            |            Sumbal Malik             | 25.03.2025. | ⚠️ TO BE DONE |
+|                                         Provide a link to GO1 GitHub repo                                    |         Syed Abbas Hussain          | 25.03.2025. | ⚠️ TO BE DONE |
+|                                         K1 Perception                                                        |         Syed Abbas Hussain          | 25.03.2025. | ⚠️ TO BE DONE |
+
+- Discussions about previously done work that included:
+
+	- Still some work is needed to fix multi-robot usage in Gazebo—identified an issue with launch files and passing arguments through them.
+	- Finalize the Q1 report—an initial version was presented at the meeting.
+	- BU to provide the repositories used for grasping strategies.
+	- RAAD paper—reviewer comments have been checked and agreed upon.
+	- Formulated a Flexible Multi-Depot VRP using the Planning Domain Definition Language (PDDL).
+	- Discussion on PDDL: evaluating its expressiveness in capturing all task constraints (payload, energy consumption, etc.), comparing its formulation with ILP, and analyzing different PDDL planners.
+	- Demonstration of GO1 + K1 grasping a brick from a predefined position.
+	- Perception and grasping for K1 are in progress.
+	- Agreement needed on the simulation approach—will Al Silal provide the digital twin for the project, or should an open-source environment for greenhouses be found?
+	- Discussion on two demo scenarios: one for last-mile delivery (physical) and one for the agrifood use case (simulation).
+
+
+
 ## Meeting 27.02.2025.
 
 |                                                     Task                                                     |             Responsible             |     Due     |    Status     |
 | :----------------------------------------------------------------------------------------------------------: | :---------------------------------: | :---------: | :-----------: |
-| Refactor documentation, perform ROS2 integration testing, and automate ROS2/1 Bridge bring up with a script. |    Nikola Knezevic, Nikola Ruzic    | 13.03.2025. | ⚠️ TO BE DONE |
+| Refactor documentation, perform ROS2 integration testing, and automate ROS2/1 Bridge bring up with a script. |    Nikola Knezevic, Nikola Ruzic    | 13.03.2025. | ✅ DONE |
 |                                       Multi robot bug fix, Map bug fix                                       |    Nikola Knezevic, Nikola Ruzic    | 13.03.2025. | ⚠️ TO BE DONE |
 |                                            Digital twin AL Silal                                             |                                     |             | ⚠️ TO BE DONE |
 |                                       PDDL example for multiple robots                                       |            Sumbal Malik             | 13.03.2025. | ⚠️ TO BE DONE |
-|                            Explore how to integrate the PDDF with GO1 integration                            |         Syed Abbas Hussain          | 13.03.2025. | ⚠️ TO BE DONE |
+|                            Explore how to integrate the PDDF with GO1 integration                            |         Syed Abbas Hussain          | 13.03.2025. | ✅ DONE |
 |                                         Provide a link to GO1 GitHub repo                                    |         Syed Abbas Hussain          | 13.03.2025. | ⚠️ TO BE DONE |
 
 - Discussions about previously done work that included:

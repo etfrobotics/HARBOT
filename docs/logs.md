@@ -1,4 +1,35 @@
 # Meetings Minutes
+## Meeting 10.04.2025.
+
+|                                                     Task                                                     |             Responsible             |     Due     |    Status     |
+| :----------------------------------------------------------------------------------------------------------: | :---------------------------------: | :---------: | :-----------: |
+|                                         Finish Q1 report                                                     |            Nikola Knezevic          | 24.04.2025. | ✅ DONE |
+|                                         Grasping strategies repo                                             |            Nikola Knezevic          | 24.04.2025. | ✅ DONE |
+|                                         RAAD paper comments                                                  |  Nikola Knezevic, Nikola Ruzic, Sumbal Malik       | 25.03.2025. | ✅ DONE|
+|                                         Simulation environments for greenhouses                              |            Nikola Ruzic, Sayed          | 24.04.2025. | ⚠️ TO BE DONE |
+|                                       Multi robot bug fix, Map bug fix                                       |    Nikola Knezevic, Nikola Ruzic    | 24.04.2025. | ⚠️ TO BE DONE |
+|                                            Digital twin AL Silal                                             |                                     |             | ⚠️ TO BE DONE |
+|                                       Review the PDDL versions and related work.                            |            Sumbal Malik             | 24.04.2025. | ✅ DONE |
+|                                         Provide a link to GO1 GitHub repo                                    |         Syed Abbas Hussain          | 24.04.2025. | ✅ DONE |
+|                                         K1 Perception                                                        |         Syed Abbas Hussain          | 24.04.2025. | ⚠️ TO BE DONE |
+|                         Make an Isaac Sim based simulation for the RBKAIROS robot                             |         Nikola Ruzic               | 24.04.2025. | ⚠️ TO BE DONE |
+|                   PDDL problem definition for the last mile logistics as interacting mobile manipulators      |         Sumbal Malik          | 24.04.2025. | ⚠️ TO BE DONE |
+
+
+- Discussions about previously done work that included:
+
+
+	- Exploring a new research direction for route planning
+	- Framing the PDDL problem definition for the last mile logistics as interacting mobile manipulators.
+	- Demonstration of the web-based control system for the GO1
+	- Demonstration of the URDF file for the GO1 compatable ARM
+	- Demonstration of a object detection algorithm for the perception capabilities of the GO1 manipulator
+	- Multi-robot issue has been presented to the RBKAIROS manufacturer - > awating a response
+	- Isaac Sim Ros control exploration
+	- Isaac Sim RBKAIROS port and its possible uses has been discussed
+	- Isaac Lab future application has been discussed
+
+
 ## Meeting 11.03.2025.
 
 |                                                     Task                                                     |             Responsible             |     Due     |    Status     |

@@ -17,10 +17,15 @@
 
 
 - Discussions about previously done work that included:
+	- PDDL problem definition for the last mile logistics as interacting mobile manipulators:
+	The term "drone" should be replaced by "robot agent." In the current reports, there is no need for drones because they are just mobile robots or robot agents without kinematic and 		environmental constraints.
 
+	- Possible type of constraints to be explored from the literature: 
+	1. Payload - manipulation payload, mobile base payload
+	2. Advanced:
+		2.1 Environmental constraint (restrictions for specific type of robots or different max robot velocities) - this is important to demonstrate the need for different robot 			agents: legged robots and wheeled robots whose constraint is restricted for specific environments like stairs or rough terrain.
+		2.2 Kinematic constraints in path planning due to the sliding constraint for wheeled robots/trucks and similar constraints for leged robots
 
-	- Exploring a new research direction for route planning
-	- Framing the PDDL problem definition for the last mile logistics as interacting mobile manipulators.
 	- Demonstration of the web-based control system for the GO1
 	- Demonstration of the URDF file for the GO1 compatable ARM
 	- Demonstration of a object detection algorithm for the perception capabilities of the GO1 manipulator
@@ -28,6 +33,9 @@
 	- Isaac Sim Ros control exploration
 	- Isaac Sim RBKAIROS port and its possible uses has been discussed
 	- Isaac Lab future application has been discussed
+
+
+   
 
 
 ## Meeting 11.03.2025.

@@ -1,4 +1,54 @@
 # Meetings Minutes
+
+## Meeting 24.04.2025.
+
+|                                                     Task                                                     |             Responsible             |     Due     |    Status     |
+| :----------------------------------------------------------------------------------------------------------: | :---------------------------------: | :---------: | :-----------: |
+|                                         Finish Q2 report                                                     |            Nikola Knezevic          | 24.05.2025. | ✅ DONE |
+|                                         Finish Q2 report                                                     |            Nikola Knezevic, Sumbal Malik          | 8.05.2025. | ⚠️ TO BE DONE |
+|                                         Simulation environments for greenhouses                              |            Nikola Ruzic, Syed Abbas Hussain          | 8.05.2025. | ⚠️ TO BE DONE |
+|                                       Multi robot bug fix, Map bug fix                                       |    Nikola Knezevic, Nikola Ruzic    |             | ⚠️ TO BE DONE |
+|                                            Digital twin AL Silal                                             |                                     |             | ⚠️ TO BE DONE |
+|                                         K1 Perception                                                        |         Syed Abbas Hussain          | 24.04.2025. | ✅ DONE |
+|                         Make an Isaac Sim based simulation for the RBKAIROS robot                             |         Nikola Ruzic               | 8.05.2025. | ⚠️ TO BE DONE |
+|                   PDDL problem definition for the last mile logistics as interacting mobile manipulators      |         Sumbal Malik          | 24.04.2025. | ✅ DONE |
+|                       Formulate a concrete plan and literature review for robot skill acquisition.           |         Nikola Ruzic               | 8.05.2025. | ⚠️ TO BE DONE |
+|                                         K1 + GO1 Initial simulation integration                              |         Syed Abbas Hussain          | 8.05.2025. | ⚠️ TO BE DONE |
+|                   Upgrading the capabilities for the Multi-agent PDDL planning      				|         Sumbal Malik          | 8.05.2025. | ⚠️ TO BE DONE |
+
+
+
+
+- Discussions about previously done work that included:
+	- Multi robot bug fix, Map bug fix , Multi-robot Gazebo simulation still has a namespace issue
+	- Make an Isaac Sim based simulation for the RBKAIROS robot, URDF importer doesn't work with the whole robot, strategy is to split the base from the arm
+ 	- New Research directions - > whole body task-based planning, while taking into account the required parameters of a given robot skill (i.e whole-body stiffness shaping)
+		- Can be useful for safe and streamlined skill execution like packing, carrying, picking …
+		- Can take into account different soft grippers and manipulation aspects of the system application 
+		- Success rate – proposed metric to be used as a benchmark to be connected to the high-level PDDL planners.
+  	- Whole-body stiffness shaping - > generate x,y and theta values for the mobile-base to satisfy the stiffness constrains outside the robot stationary workspace.
+ 
+  	- Completed the perception pipeline
+  	- Initial testing with the KNN model for motion planning
+  	- A switch to the more robust MoveIT motion planning pipeline based on perception
+
+     	- Integrated a new type of agent (robot) into the PDDL formulation
+  	- Integrated the maximum distance constraint for auxiliary vehicles
+  	- Integrated the Cyclic and acyclic operations for auxiliary vehicles
+
+   	- Upgrading the capabilities for the Multi-agent PDDL planning:
+  		- Multiple truck and auxiliary vehicle testing
+   	 	- Flexible docking for drones and robots
+   	    	- Randomizing locations and distances
+   	       	- Configuring different temporal planners (SGPlan, TFD)
+  	  
+  	   
+
+
+	
+
+
+
 ## Meeting 10.04.2025.
 
 |                                                     Task                                                     |             Responsible             |     Due     |    Status     |

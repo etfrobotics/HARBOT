@@ -5,7 +5,7 @@
 |                                                     Task                                                     |             Responsible             |     Due     |    Status     |
 | :----------------------------------------------------------------------------------------------------------: | :---------------------------------: | :---------: | :-----------: |
 |                                         Finish Q2 report                                                     |            Nikola Knezevic          | 24.05.2025. | ✅ DONE |
-|                                         Finish Q2 report                                                     |            Nikola Knezevic, Sumbal Malik          | 8.05.2025. | ⚠️ TO BE DONE |
+|                                         Integrate Q1 and Q2 reports for BU and KU                            |            Nikola Knezevic, Sumbal Malik          | 8.05.2025. | ⚠️ TO BE DONE |
 |                                         Simulation environments for greenhouses                              |            Nikola Ruzic, Syed Abbas Hussain          | 8.05.2025. | ⚠️ TO BE DONE |
 |                                       Multi robot bug fix, Map bug fix                                       |    Nikola Knezevic, Nikola Ruzic    |             | ⚠️ TO BE DONE |
 |                                            Digital twin AL Silal                                             |                                     |             | ⚠️ TO BE DONE |

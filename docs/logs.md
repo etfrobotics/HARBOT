@@ -1,5 +1,44 @@
 # Meetings Minutes
 
+## Meeting 8.05.2025.
+
+|                                                     Task                                                     |             Responsible             |     Due     |    Status     |
+| :----------------------------------------------------------------------------------------------------------: | :---------------------------------: | :---------: | :-----------: |
+|                                         Integrate Q1 and Q2 reports for BU and KU                            |            Nikola Knezevic, Sumbal Malik          | 8.05.2025. | ✅ DONE |
+|                                         Simulation environments for greenhouses                              |            Nikola Ruzic, Syed Abbas Hussain          | 8.05.2025. | ⚠️ TO BE DONE |
+|                                       Multi robot bug fix, Map bug fix                                       |    Nikola Knezevic, Nikola Ruzic    |             | ⚠️ TO BE DONE |
+|                                            Digital twin AL Silal                                             |                                     |             | ⚠️ TO BE DONE |
+|                         Make an Isaac Sim based simulation for the RBKAIROS robot                             |         Nikola Ruzic               |		 | ⚠️ TO BE DONE |
+|                       Formulate a concrete plan and literature review for robot skill acquisition.           |         Nikola Ruzic               | 8.05.2025. | ✅ DONE |
+|                                         K1 + GO1 Initial simulation integration                              |         Syed Abbas Hussain          | 8.05.2025. | ✅ DONE |
+|                   Upgrading the capabilities for the Multi-agent PDDL planning      				|         Sumbal Malik          | 8.05.2025. | ✅ DONE |
+|                       Literature review report for robot skill acquisition.          		 |         Nikola Ruzic               | 22.05.2025. | ⚠️ TO BE DONE |
+|                      Develop a simple case for the ellipsoid mobile-manipulator stiffness shaping      |         Nikola Ruzic               | 22.05.2025. | ⚠️ TO BE DONE |
+|                   Enabling flexible docking for drones and robots   				|         Sumbal Malik          | 22.05.2025. | ⚠️ TO BE DONE |
+|                   Further work on the GO1 + arm platform web portal and sim integration	|         Syed Abbas Hussain          | 22.05.2025. | ⚠️ TO BE DONE |
+
+
+
+
+
+- Discussions about previously done work that included:
+
+ 
+  	- Completed the manual and automatic control of the GO1 simulated robot, though the web portal.
+
+     	- Integrated a multi-visit trip for the robot fleet
+  	- Tested multiple trucks and auxiliary vehicles in the PDDL
+
+	- Manipulator impedance control integration for the RBKAIROS robot
+   	- Initial research and development plan formulated
+
+
+  	  
+  	   
+
+
+
+
 ## Meeting 24.04.2025.
 
 |                                                     Task                                                     |             Responsible             |     Due     |    Status     |

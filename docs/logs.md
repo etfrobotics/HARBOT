@@ -1,5 +1,42 @@
 # Meetings Minutes
 
+## Meeting 31.07.2025.
+
+|                                                     Task                                                     |             Responsible             |     Due     |    Status     |
+| :----------------------------------------------------------------------------------------------------------: | :---------------------------------: | :---------: | :-----------: |
+|                                         Simulation environments for greenhouses                              |            Nikola Ruzic, Syed Abbas Hussain          | 8.05.2025. | ⚠️ TO BE DONE |
+|                                            Digital twin AL Silal                                             |                                     |             | ⚠️ TO BE DONE |
+|                         Make an Isaac Sim based simulation for the RBKAIROS robot                             |         Nikola Ruzic               |		 | ⚠️ TO BE DONE |
+|                         Make an Isaac Sim based simulation for the RBKAIROS robot                             |         Nikola Ruzic               |		 | ⚠️ TO BE DONE |
+|                         Research fit of Khalifa University (KU) within the proposed topics (Planning)          |         KU	                     |		 | ⚠️ TO BE DONE |
+|                         Recommended application case (ETF & KU)				                 |       ETF & KU	             |		 | ⚠️ TO BE DONE |
+
+
+
+
+
+
+- Discussions about previously done work that included:
+
+- Dicusssion about the Proposal for KU-ETF research intersection within HARBOT project
+	Research aspects to be considered as novelties within the proposed topics!:
+	- action plan Vs policy
+	- behavior trees for replaning, based on feedback loop as novelty
+   
+ - Al Silal approximate simulation environemt
+ - 
+ - ROS2 navigation task for autonomous navigation
+ - Final campus demo for autonomous navigation
+ - 
+ - Non-deterministic PDDL research
+ - Policy based PDDL formulation
+ - Proposal evaulation
+   
+
+   	
+
+
+
 ## Meeting 8.05.2025.
 
 |                                                     Task                                                     |             Responsible             |     Due     |    Status     |

@@ -1,5 +1,30 @@
 # Meetings Minutes
 
+## Meeting 14.08.2025.
+
+|                                                     Task                                                     |             Responsible             |     Due     |    Status     |
+| :----------------------------------------------------------------------------------------------------------: | :---------------------------------: | :---------: | :-----------: |
+|                                         Simulation environments for greenhouses                              |            Nikola Ruzic, Syed Abbas Hussain          | 8.05.2025. | ⚠️ TO BE DONE |
+|                                            Digital twin AL Silal                                             |                                     |             | ⚠️ TO BE DONE |
+|                         Make an Isaac Sim based simulation for the RBKAIROS robot                             |         Nikola Ruzic               |		 | ⚠️ TO BE DONE |
+|                         Make an Isaac Sim based simulation for the RBKAIROS robot                             |         Nikola Ruzic               |		 | ⚠️ TO BE DONE |
+|                         Look into Probabilistic PDDL in detail and start formulating the problem          |         Sumbal	                     |		 | ⚠️ TO BE DONE |
+|            Investigate stiffness values for the grasping actions and how these can be encoded into PDDL actions.	       |       Nikola Ruzic	             |		 | ⚠️ TO BE DONE |
+|          Continue working on the experiments for logistics use case.	       |       Syed	             |		 | ⚠️ TO BE DONE |
+
+
+
+### Discussion Outcomes
+- Agreed on the high-level scenario: mobile manipulators equipped with onboard collection devices will go to the farm, grasp the fruits and, upon reaching full capacity, proceed to the unloading station. They will unload and go for another trip if needed.
+- Probabilistic PDDL will be used to model the task planning part and to generate a policy-based plan.
+- The objective can be to maximize goal reachability and the mission success rate.
+
+### Additional Notes
+- Determine how to tune the probabilities for the actions.
+- Examine grasping constraints closely and define a well-structured global objective.
+   One possible objective could be to minimize fruit waste in case the robot fails to grasp properly.
+
+
 ## Meeting 31.07.2025.
 
 |                                                     Task                                                     |             Responsible             |     Due     |    Status     |

@@ -1,5 +1,55 @@
 # Meetings Minutes
 
+## Meeting 9.10.2025.
+
+|                                                     Task                                                     |             Responsible             |     Due     |    Status     |
+| :----------------------------------------------------------------------------------------------------------: | :---------------------------------: | :---------: | :-----------: |
+|                                         Simulation environments for greenhouses                              |            Nikola Ruzic, Syed Abbas Hussain          | 8.05.2025. | ⚠️ TO BE DONE |
+|                                            Digital twin AL Silal                                             |                                     |             | ⚠️ TO BE DONE |
+|                         Make an Isaac Sim based simulation for the RBKAIROS robot                             |         Nikola Knezevic            |		 | ⚠️ TO BE DONE |
+|                         Look into R-DDL in detail and start formulating the problem given a use-case          |         Sumbal	                     |		 | ⚠️ TO BE DONE |
+|            Formulate a plan for a journal submission.                                                         |       Nikola Ruzic	             |		 | ⚠️ TO BE DONE |
+|          Polish the Gazebo integration and vizualization                                                      |       Syed	             |		 | ⚠️ TO BE DONE |
+|            Perform the first half of the four week plan                                              	       |       Veljko Todic             |		 | ⚠️ TO BE DONE |
+
+
+
+### Discussion Outcomes
+
+- Agreed on a four week plan for conditional probabilistic modeling
+- Discussed a journal submission and an experiment for the mobile stiffness shaping methodology.
+- Agreed on switching the planning methodology from P-PDDL to Relational  Dynamic  Influence 
+Diagram Language (RDDL)
+- Agreed on the integration for a high-level scenario: mobile manipulators equipped with onboard collection devices will go to the farm, grasp the fruits and, upon reaching full capacity, proceed to the unloading station. They will unload and go for another trip if needed.
+- Discussed the Gazebo integration of the multi-agent smart greenhouse simulation
+- Discussed the integration of a smart compliant wrist and gripper design for agriculture
+- Discussed tbe application of the smart gripper design in the multi-robot case
+- 
+### Additional Notes
+
+RDDL Planner - an example - PROST
+
+Online Probabilistic planner that repeatedly computes which action to 
+take  in  the  current  state,  executes  that  action  by  interacting  with 
+rddlsim, observes the resulting outcome, and updates the current state 
+according to the outcome.
+
+The language is state and action - fluent, meaning it better fits into
+our paradigm of addaptable, action feedback based, reactive planner.
+
+States, can be modeled by a fluent variable
+Actions, can be modeled by a fluent variable
+Fluent here means dynamic, evolves with new sensor data.
+
+Each state-fluent variable needs to have a conditional probability function describing the evolution
+from one to the other state.
+
+
+
+
+
+
+
 ## Meeting 14.08.2025.
 
 |                                                     Task                                                     |             Responsible             |     Due     |    Status     |

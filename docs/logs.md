@@ -38,13 +38,17 @@ The language is state and action - fluent, meaning it better fits into
 our paradigm of addaptable, action feedback based, reactive planner.
 
 States, can be modeled by a fluent variable
+
 Actions, can be modeled by a fluent variable
+
 Fluent here means dynamic, evolves with new sensor data.
 
 Each state-fluent variable needs to have a conditional probability function describing the evolution
 from one to the other state.
 
-
+Mobile stiffness shaping uses a mobile manipulator to optimize and plan the stiffness
+acording to the user defined trajectory and manipulator interaction requirements. It utilizes 
+all of the degrees of freedom to furfil the task.
 
 
 

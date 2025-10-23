@@ -2,6 +2,41 @@
 
 ## Meeting 9.10.2025.
 
+|                                                                             Task                                                                             |   Responsible   | Due |     Status    |
+| :----------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------: | :-: | :-----------: |
+|                                         Simulation environments for greenhouses                                  |            Nikola Ruzic, Syed Abbas Hussain          | 8.05.2025. | ⚠️ TO BE DONE |
+|                                            Digital twin AL Silal                                                                 |                                     |             | ⚠️ TO BE DONE |
+|                         Make an Isaac Sim based simulation for the RBKAIROS robot                                                       |         Nikola Knezevic            |		 | ⚠️ TO BE DONE |
+|                                                  Refactor project report and structure multiple manuscripts                                                  | Nikola Knezevic |     | ⚠️ TO BE DONE |
+|                                           Continue soft gripper experimental setup and perform grasping validation                                           |   Veljko Todic  |     | ⚠️ TO BE DONE |
+|                                           Formulate   the experiment for RDDL integration with mobile stiffness shaping                                      |   Nikola Ružić  |     | ⚠️ TO BE DONE |
+| Extend RDDL planner to more than 20 locations; define preconditions and reward functions; investigate idle robot behavior; modify reward to include grasping |      Sumbal     |     | ⚠️ TO BE DONE |
+|                                     Integrate unloading logic, multi-robot and multi-station behavior into RDDL use-case                                     |      Sumbal     |     | ⚠️ TO BE DONE |
+
+
+### Discussion Outcomes
+
+- Knez presented the 12-month report and the grasping-probability model.
+
+- Discussed results from mobile manipulator stiffness shaping and agreed to refactor the project report into multiple manuscripts.
+
+- Veljko reported successful initial grasping experiments with the soft gripper setup.
+
+- Nikola presented a literature review and draft paper for the stiffness-shaping methodology.
+
+- Sumbal showed an RDDL planner prototype handling 20 locations, with defined action preconditions and reward functions for fruit harvesting.
+
+- Agreed to investigate robot idle behavior and extend the reward function to include grasp success rate.
+
+- Discussed integration of unloading logic for multi-station and multi-robot cases within RDDL.
+
+### Additional Notes
+
+- (Sumbal, K. Nikola, R. Nikola) Have agreed upon a seperate RDDL integration meeting @ Thursday 30.10.2025. 4PM Abu Dhabi time.
+
+
+## Meeting 9.10.2025.
+
 |                                                     Task                                                     |             Responsible             |     Due     |    Status     |
 | :----------------------------------------------------------------------------------------------------------: | :---------------------------------: | :---------: | :-----------: |
 |                                         Simulation environments for greenhouses                              |            Nikola Ruzic, Syed Abbas Hussain          | 8.05.2025. | ⚠️ TO BE DONE |

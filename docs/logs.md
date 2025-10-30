@@ -1,5 +1,39 @@
 # Meetings Minutes
 
+## Meeting 30.10.2025.
+
+- (Sumbal, K. Nikola, R. Nikola, Veljko) RDDL integration meeting
+
+We have discussed about the minimum possible example of the RDDL multi-bin last mile logistics harvesting problem.
+
+Themes of the Discussion
+
+RDDL – Practical Example: Exploring how RDDL functions through a concrete example.
+
+Feedback Loop Analysis: Attempting to determine what a feedback loop of any kind would look like within the RDDL framework.
+
+Implementation Perspective: Discussing how such a system could be implemented in practice — including suitable data types, such as matrices, lists, or other structures.
+
+https://arxiv.org/html/2211.05939v5 - pyRDDLGym, practical way to integrate a feedback loop.
+
+Two possible publications were dicsussed:
+ 
+Motivating example1: Picking fruits in a field, if there is wind in some part of the field, it increases uncertainty of the grasping operation,
+so that the planner should take that into account with the newly coputed lower probabilites of grasping.
+Motivating example2: If there are lots of branches, there is a higher probability of robot collision so the robot should be more compliant, and the
+planner should take that into account in the harvesting regions where the clutter is more prominent.
+
+- Initial publication, where the main contribution would be the added feedback loop for the changing probabilities, a simple case with one of the robots,
+and the evaluation experiment. The feedback loop would be ran once.
+
+- Subsequent publications would include a time-horizon approach in computing the probabilities for robot-task-level actions. At each period ex. T=15mins The algorithm would
+replan the actions using new probabilities dervied from sensor data (Mimicing the MPC approach).
+
+IMPORTANT IMPLEMENTATION DETAL: RDDL engines output actions each timestep. Import implementation detail would include either a failed_action state, which leads to a probability reruns.
+RDDL backend needs to be investigated, along with the pyRDDLGym. 
+
+
+
 ## Meeting 9.10.2025.
 
 |                                                                             Task                                                                             |   Responsible   | Due |     Status    |

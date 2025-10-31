@@ -21,8 +21,8 @@ Topics of the Discussion
 
 4. Implementation Perspective: Discussing how such a system could be implemented in practice — including suitable data types, such as matrices, lists, or other structures.
 
-https://arxiv.org/html/2211.05939v5 - pyRDDLGym, practical way to integrate a feedback loop:
-Since this is a gym environment the following plans can be tested and used in a publications that
+https://arxiv.org/html/2211.05939v5 - pyRDDLGym, practical way to integrate a feedback loop.
+Beacuse this is a gym environment the following plans can be tested and used in a publications that
 are ready to use with out-of-the-box planners:
 1. JaxPlan: Planning through autodifferentiation
 

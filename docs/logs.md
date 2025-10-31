@@ -12,9 +12,9 @@ Topics of the Discussion
    	Current RDDL implementation includes a series of fruit locations, with one robot. The robot visits each of the locations and has a 95% chance
    	of successful picking operation. It retries the operation until it succeeds, and then it deposites the fruit to the other depo or agents.
    
-   	Indentified an critical implementational issue, how can the agent synchronize with the real-world sensor data and know when it didn't succeed in the grasping operations,
-   	as of now it is open ended, where the engine outputs a series of actions, but if the robot doesn't signal a failed grasp, the world model of the planner diverges
-   	from the real-world.
+   	Indentified an critical implementational issue, how can the agent synchronize with the real-world sensor data and know when it didn't succeed in the grasping operations?
+   	As of now it is open ended, where the engine outputs a series of actions each timestep as a json file, but if the robot doesn't signal a failed grasp to the planner,
+   	the world model of the planner diverges from the real-world.
 
 3. Feedback Loop Analysis: Attempting to determine what a feedback loop of any kind would look like within the RDDL framework.
 

@@ -8,7 +8,7 @@ We have discussed about the minimum possible example of the RDDL multi-bin last 
 
 Topics of the Discussion
 
-1. RDDL – Practical Example: Exploring how RDDL functions through a concrete example:
+1. RDDL – Exploring how RDDL functions through a concrete example:
    	Current RDDL implementation includes a series of fruit locations, with one robot. The robot visits each of the locations and has a 95% chance
    	of successful picking operation. It retries the operation until it succeeds, and then it deposites the fruit to the other depo or agents.
    

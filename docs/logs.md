@@ -12,7 +12,7 @@ Topics of the Discussion
 
 2. Feedback Loop Analysis: Attempting to determine what a feedback loop of any kind would look like within the RDDL framework.
 
-3/ Implementation Perspective: Discussing how such a system could be implemented in practice — including suitable data types, such as matrices, lists, or other structures.
+3. Implementation Perspective: Discussing how such a system could be implemented in practice — including suitable data types, such as matrices, lists, or other structures.
 
 https://arxiv.org/html/2211.05939v5 - pyRDDLGym, practical way to integrate a feedback loop.
 

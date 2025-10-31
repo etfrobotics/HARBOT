@@ -1,6 +1,6 @@
 # Meetings Minutes
 
-## Meeting 30.10.2025.
+## Integration Meeting 30.10.2025.
 
 - (Sumbal, Veljko,  R. Nikola) RDDL integration meeting
 

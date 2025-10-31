@@ -8,11 +8,17 @@ We have discussed about the minimum possible example of the RDDL multi-bin last 
 
 Topics of the Discussion
 
-1. RDDL – Practical Example: Exploring how RDDL functions through a concrete example.
+1. RDDL – Practical Example: Exploring how RDDL functions through a concrete example:
+   	Current RDDL implementation includes a series of fruit locations, with one robot. The robot visits each of the locations and has a 95% chance
+   	of successful picking operation. It retries the operation until it succeeds, and then it deposites the fruit to the other depo or agents.
+   
+   	Indentified an critical implementational issue, how can the agent synchronize with the real-world sensor data and know when it didn't succeed in the grasping operations,
+   	as of now it is open ended, where the engine outputs a series of actions, but if the robot doesn't signal a failed grasp, the world model of the planner diverges
+   	from the real-world.
 
-2. Feedback Loop Analysis: Attempting to determine what a feedback loop of any kind would look like within the RDDL framework.
+3. Feedback Loop Analysis: Attempting to determine what a feedback loop of any kind would look like within the RDDL framework.
 
-3. Implementation Perspective: Discussing how such a system could be implemented in practice — including suitable data types, such as matrices, lists, or other structures.
+4. Implementation Perspective: Discussing how such a system could be implemented in practice — including suitable data types, such as matrices, lists, or other structures.
 
 https://arxiv.org/html/2211.05939v5 - pyRDDLGym, practical way to integrate a feedback loop.
 

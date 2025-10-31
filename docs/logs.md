@@ -29,7 +29,7 @@ and the evaluation experiment. The feedback loop would be ran once.
 - Subsequent publications would include a time-horizon approach in computing the probabilities for robot-task-level actions. At each period ex. T=15mins The algorithm would
 replan the actions using new probabilities dervied from sensor data (Mimicing the MPC approach).
 
-IMPORTANT IMPLEMENTATION DETAL: RDDL engines output actions each timestep. Import implementation detail would include either a failed_action state, which leads to a probability reruns.
+IMPORTANT IMPLEMENTATION DETAL: RDDL engines output actions each timestep. Import implementation detail would include either a failed_action state or init file cganges which leads to a probability reruns.
 RDDL backend needs to be investigated, along with the pyRDDLGym. 
 
 

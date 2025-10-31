@@ -21,7 +21,18 @@ Topics of the Discussion
 
 4. Implementation Perspective: Discussing how such a system could be implemented in practice — including suitable data types, such as matrices, lists, or other structures.
 
-https://arxiv.org/html/2211.05939v5 - pyRDDLGym, practical way to integrate a feedback loop.
+https://arxiv.org/html/2211.05939v5 - pyRDDLGym, practical way to integrate a feedback loop:
+Since this is a gym environment the following plans can be tested and used in a publications that
+are ready to use with out-of-the-box planners:
+1. JaxPlan: Planning through autodifferentiation
+
+2. GurobiPlan: Planning through mixed discrete-continuous optimization
+
+3. PROST: Monte Carlo Tree Search (MCTS)
+
+4. Deep Reinforcement Learning (DQN, PPO, etc.): Popular Reinforcement Learning (RL) algorithms from Stable Baselines and RLlib
+
+5. Symbolic Dynamic Programming: Exact Symbolic regression-based planning and policy evaluation
 
 Two possible publications were dicsussed:
  

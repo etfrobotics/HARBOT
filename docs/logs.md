@@ -6,13 +6,13 @@
 
 We have discussed about the minimum possible example of the RDDL multi-bin last mile logistics harvesting problem.
 
-Themes of the Discussion
+Topics of the Discussion
 
-RDDL – Practical Example: Exploring how RDDL functions through a concrete example.
+1. RDDL – Practical Example: Exploring how RDDL functions through a concrete example.
 
-Feedback Loop Analysis: Attempting to determine what a feedback loop of any kind would look like within the RDDL framework.
+2. Feedback Loop Analysis: Attempting to determine what a feedback loop of any kind would look like within the RDDL framework.
 
-Implementation Perspective: Discussing how such a system could be implemented in practice — including suitable data types, such as matrices, lists, or other structures.
+3/ Implementation Perspective: Discussing how such a system could be implemented in practice — including suitable data types, such as matrices, lists, or other structures.
 
 https://arxiv.org/html/2211.05939v5 - pyRDDLGym, practical way to integrate a feedback loop.
 

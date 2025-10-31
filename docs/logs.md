@@ -2,7 +2,7 @@
 
 ## Meeting 30.10.2025.
 
-- (Sumbal, K. Nikola, R. Nikola, Veljko) RDDL integration meeting
+- (Sumbal, R. Nikola, Veljko) RDDL integration meeting
 
 We have discussed about the minimum possible example of the RDDL multi-bin last mile logistics harvesting problem.
 

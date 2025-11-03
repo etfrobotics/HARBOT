@@ -50,9 +50,11 @@ replan the actions using new probabilities dervied from sensor data (Mimicing th
 IMPORTANT IMPLEMENTATION DETAL: RDDL engines output actions each timestep. Import implementation detail would include either a failed_action state or init file cganges which leads to a probability reruns.
 RDDL backend needs to be investigated, along with the pyRDDLGym. 
 
+Investigation outcome:
 Documentation link: https://pyrddlgym.readthedocs.io/en/latest/introduction.html
 Closed loop replanning: https://pyrddlgym.readthedocs.io/en/latest/notebooks/closed_loop_replanning_with_jaxplan.html
 
+This can be used along with a simple 2D environment, along with a modeled mobile robot with omnidirectional drive.
 
 
 

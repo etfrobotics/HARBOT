@@ -31,7 +31,9 @@ a conference ready paper titled: Application of Volumetric Grasping Networks for
 
 ROSPlan
 https://kcl-planning.github.io/ROSPlan/documentation/
-https://github.com/RobotnikAutomation/robotnik_simulation
+Robotnik github
+- https://github.com/RobotnikAutomation/robotnik_simulation
+- https://github.com/RobotnikAutomation/rbkairos_sim
 
 
 

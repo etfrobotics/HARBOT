@@ -17,14 +17,14 @@
 
 ### Discussion Outcomes
 
--Nikola R: Talked about the results of the Integration Meeting 30.10.2025, the closed loop action integration and presented 
+- Nikola R: Talked about the results of the Integration Meeting 30.10.2025, the closed loop action integration and presented 
 a conference ready paper titled: Application of Volumetric Grasping Networks for Fruit Manipulation with a Collaborative Robot
--Nikola K: Talked about the PybulletSim as the next diraction for robot simulation.
--Sumbal: Talked about the Jax planner Nikola R presented.
--Seyyed: Inquired about the sim detals
--Sumbal: Presented the new reward function, along with the the regrasping (replanning) actions.
--Veljko: Presented the results of grasp displasement based grasping probability for soft grippers.
--Sumbal: Inquired about the dropoff probability, Nikola Knez. talked about computing uncertainty for pick and toss or similar offloading tactics
+- Nikola K: Talked about the PybulletSim as the next diraction for robot simulation.
+- Sumbal: Talked about the Jax planner Nikola R presented.
+- Seyyed: Inquired about the sim detals
+- Sumbal: Presented the new reward function, along with the the regrasping (replanning) actions.
+- Veljko: Presented the results of grasp displasement based grasping probability for soft grippers.
+- Sumbal: Inquired about the dropoff probability, Nikola Knez. talked about computing uncertainty for pick and toss or similar offloading tactics
 
 
 ### Additional Notes

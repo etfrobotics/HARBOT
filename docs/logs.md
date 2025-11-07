@@ -8,7 +8,7 @@
 |                                            Digital twin AL Silal                                                                 |                                     |             | ⚠️ TO BE DONE |
 |                        Develop a PyBullet sim of the mob. manipulator                                                       |         Nikola Knezevic, Nikola Ruzic           |		 | ⚠️ TO BE DONE |
 |                        Investigate ROSplan and PyRDDL integration layer with Pybullet                                        |         Nikola Knezevic, Nikola Ruzic           |		 | ⚠️ TO BE DONE |
-|                        *                                       |        Veljko           |		 | ⚠️ TO BE DONE |
+|Continue the soft-gripper experiment by testing grasping performance on additional fruit shapes.Validate the gripper’s capability and consistency across varied object geometries.                                       |        Veljko           |		 | ⚠️ TO BE DONE |
 |                        Tweak the reward function, communicate with ETF team for integration                                       |         Sumbal          |		 | ⚠️ TO BE DONE |
 
 

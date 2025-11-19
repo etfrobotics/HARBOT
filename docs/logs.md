@@ -1,6 +1,34 @@
 # Meetings Minutes
 
-## Meeting 22.11.2025.
+## Meeting 5.11.2025.
+
+|                                                                             Task                                                                             |   Responsible   | Due |     Status    |
+| :----------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------: | :-: | :-----------: |
+|                                         Simulation environments for greenhouses                                  |            Nikola Ruzic, Syed Abbas Hussain          | 8.05.2025. | ⚠️ TO BE DONE |
+|                                            Digital twin AL Silal                                                                 |                                     |             | ⚠️ TO BE DONE |
+|                        Integrate a PyBullet sim of the mob. manipulator                                                       |         Nikola Knezevic, Nikola Ruzic           |		 | ⚠️ TO BE DONE |
+|	 						Formulate probabilities for the sim                           |        Veljko           |		 | ⚠️ TO BE DONE |
+|                       Integrattion of the one agent planning loop with ETF                                     |         Seyyed, Sumbal          |		 | ⚠️ TO BE DONE |
+
+### Discussion Outcomes
+- Nikola discussed about the pybullet simulation, ROSplan and the deployment of the models.
+
+- Seyyed talked about the implementation of the GO1 Autonomous navigation: Future plans, work on the grasping for GO1.
+
+- Veljko talked about the non-symetrical fruit grasping experiments and their success rate using the multifingered soft grippers. The results were presented from the experiments.
+
+- Sumbal quick of the RDDL scenario. Talked about parametrized Variables,  the preconditions, grasping conditions. Multi-trip Cycle. Reward function.
+
+- Majid: Talked about the intuition of using planners versus using just RL when we have the model of the world, with state transition of probabilities. RL is useful when you have limited information, for multi-agents and well defined. 
+
+### Additional Notes
+
+Important publication: One agent, for a single agent, and integrate it. 
+Focus on the closing the loop, rather than the replanning for a bigger time horizon. Close the loop for the soft grippers. Implement the Sumbals Minimal example with the sims. Model is as a fixed MDP.
+
+
+
+## Meeting 5.11.2025.
 
 |                                                                             Task                                                                             |   Responsible   | Due |     Status    |
 | :----------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------: | :-: | :-----------: |

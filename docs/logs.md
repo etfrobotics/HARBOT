@@ -1,5 +1,35 @@
 # Meetings Minutes
 
+## Discussion for the publication
+
+### BU + KU:
+
+- General paper concept and methodology -> DONE
+
+### KU:
+
+- RDDL problem description for the autonomous fruit picking task (domain + instance file) 
+
+- Paper Introduction chapter -> In progress
+
+- Paper Methodology chapter -> In progress
+
+- Greenhouse environment devlopment in blender (STL file) -> In progress
+
+- Environment Integration in the exsisting sim (Gazebo, Pybullet..) -> In progress
+
+### BU:
+
+- RDDL PROST server ROS wrapper, that can communicate the current world state to the server and vice versa. Works on
+ubuntu 20.04 and ROS1 Noetic, out of the box. -> DONE [PROST wrapper](https://github.com/etfrobotics/prost_ros)
+
+- Downstream application task integration for the real-world robot, and the experiment hardware setup. -> In progress
+
+- Grasping probabilities, along with the paper writeup -> DONE (Overleaf link)
+
+- Experiment description, and the experiment results paper chapter -> In progress
+
+
 ## Meeting 19.11.2025.
 
 |                                                                             Task                                                                             |   Responsible   | Due |     Status    |

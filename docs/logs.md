@@ -8,14 +8,13 @@
 
 ### KU:
 
-- RDDL problem description for the autonomous fruit picking task (domain + instance file) 
-
+- Implemented Automated task planner for autonomous fruit harvesting in RDDL for single robot setting -> DONE
+- Implemented the Dashboard to visualize the results - DONE
+- Implementing Automated task planner for autonomous fruit harvesting in RDDL for multi-robot setting -> In progress
+- Literature review comparison table -> In progress
 - Paper Introduction chapter -> In progress
-
 - Paper Methodology chapter -> In progress
-
 - Greenhouse environment devlopment in blender (STL file) -> In progress
-
 - Environment Integration in the exsisting sim (Gazebo, Pybullet..) -> In progress
 
 ### BU:

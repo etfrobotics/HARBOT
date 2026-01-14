@@ -1,5 +1,14 @@
 # Meetings Minutes
 
+## 14.1.2026. Monthly Meeting
+
+- Paper discussion
+- Greenhouse model presentation
+- pyRDDLgym usage for the interface layer
+- Experiment RDDL definition
+- Joint github repo for the publication
+- Must have/Good to have/Details discussion
+
 ## Discussion for the publication
 
 ### BU + KU:
